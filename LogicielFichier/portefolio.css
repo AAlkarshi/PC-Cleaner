@@ -1,0 +1,257 @@
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+	width: 60%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.navbar ul{
+	width: 200px;
+}
+
+
+
+.navbar ul li {
+	width: 180px;
+	list-style: none;
+	font-size: 20px;
+	flex-direction: flex-end;
+
+}
+
+/* ONGLET EUX MEME */ 
+
+.navbar ul li a{
+	text-decoration: none;
+	font-family: Georgia, serif;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	color: #FEFEFE;
+	align-items: center;
+	width: 150px;
+}
+
+/* ONGLET SURVOL */ 
+
+.navbar ul li:hover{
+	background-color: grey;
+	opacity: 0.5;
+	border-radius: 30px;
+}
+
+
+
+
+
+.img-fluid{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+
+
+
+
+
+
+.container py-5 bg-light{
+	width: 100%;
+	font-size: 50px;
+	font-family: italic;
+	text-align: center;
+}
+
+
+.img_actuel{
+	display: block;
+	background-image: url(imgdefond2.jpg);
+	width: 90%; 
+	height: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+.bg-class{
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+.IMG_Logiciel{
+	display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+
+
+
+
+
+
+
+
+.horizontale-line{
+	position: relative;
+	background: red;
+	width: 200px;
+	height: 2px;
+	margin: 10px auto; 
+}
+
+
+.Titre_contact{
+	text-align: center;
+}
+
+
+
+.formulaire{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+/* ZONE DE TEXTE */
+input{
+	height: 50px;
+	margin: 8px;
+	border-radius: 30px;
+	padding-left: 5px;
+}
+
+/* ZONE DE TEXTE COMMENTAIRE */
+textarea{
+	width: 362px;
+	height: 100px;
+}
+
+
+/* Animation page accueil*/
+
+
+.d-flex flex-column justify-content-center h-100 {
+	-webkit-animation: d-flex flex-column justify-content-center h-100 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: d-flex flex-column justify-content-center h-100 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+@-webkit-keyframes d-flex flex-column justify-content-center h-100 {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes d-flex flex-column justify-content-center h-100 {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* BTN POUR Télécharger mon CV */
+
+body > div:nth-child(4) > div.container > div > div:nth-child(1) > a{
+	text-decoration: none;
+	font-family: Courier New;
+	color: black;
+
+}
+
+/* BTN POUR Visualisé mon CV */
+
+body > div:nth-child(4) > div.container > div > div:nth-child(2) > a{
+	text-decoration: none;
+	font-family: Courier New;
+	color: black;
+}
+
+
+
+
+/* SURVOL des onglets */
+body > div:nth-child(4) > div.container > div > div > a:hover{
+	border: 1px solid black;
+	background-image: linear-gradient(#f4fefe 0%, #A6B7B5 100%);
+	border-radius: 30px;
+
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: 0.6;
+	transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES COMPETENCE CITE compètences caché*/
+
+@media all and (max-width: 800px) {
+	figure cite{
+		visibility: hidden;
+	}
+}
+
+
+
+@media screen and (max-width: 800px) {
+	.navbar ul li a{
+		font-size: 20px;
+	}
+
+	.body > div.img-fluid > div > div{
+		height: 500px;
+	}
+	
+
+
+
+/* MEDIA QUERIES IMG REPONSIVE */
+
+@media only screen and (max-width: 768px) {
+  .bg-image w-100 vh-100 p-3 text-center shadow-1-strong rounded  text-white {
+    width: auto;
+    height: auto;
+  }
+}
